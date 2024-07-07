@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    h1 New message Form 
+    
+    form(method="POST" action="/new")
+        label(for="author") authorsName: 
+        input(type="text" id="author" name="author")
+        br
+
+        label(for="message") messageText: 
+        input(type="text" id="message" name="message")
+        br
+        
+        button(type="submit") Submit
